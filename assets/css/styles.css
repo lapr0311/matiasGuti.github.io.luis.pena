@@ -1,17 +1,79 @@
-body {
-    background-color: #000;
+html, body {
+    min-width: 20rem;
+    background-color: #eee;
     height: 100vh;
+  }
+
+
+.introduction {
+  height: 100%;
+  color: white;
+  text-align: center;
+  background-image: url('../gif/bg-5.gif');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 50px;
 }
 
-/* .introduction {
-    background-image: url('../img/header-bg.jpg');
-} */
+.introduction img {
+  width: 13vw;
+  border-radius: 1000px;
+  border: solid 7px #147350;
+  justify-self: center;
+}
 
-/* html, body {
-    width: 100%;
-    min-width: 20rem;
-    overflow-x: hidden;
-  } */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;  gap: 10px;
+}
+
+.content .intro-heading {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.content .intro-subheading {
+  font-size: 24px;
+  font-family: 'Roboto';
+  margin-bottom: 40px;
+}
+
+.content .intro-description {
+  width: 50%;
+  text-align: justify;
+}
+
+/*Responsive design*/
+@media only screen and (max-width: 1175px) {
+  .introduction img {
+    margin-top: 100px;
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .introduction img {
+    margin-top: 200px;
+    width: 40vw;
+  }
+
+  .content .intro-heading {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .content .intro-subheading {
+    font-size: 18px;
+    font-family: 'Roboto';
+    margin-bottom: 40px;
+  }
+}
 
 
 /* #site-header {
