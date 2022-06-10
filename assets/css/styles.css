@@ -4,7 +4,7 @@ html, body {
     height: 100vh;
   }
 
-
+/*------------ Introduction ------------*/
 .introduction {
   height: 100%;
   color: white;
@@ -49,11 +49,124 @@ html, body {
   text-align: justify;
 }
 
-/*Responsive design*/
+/* ------------ Projects ------------ */
+.proyects {
+  /* height: 120%; */
+  padding: 80px 0px;
+  background-color: #050A07;
+}
+
+.proyect-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.proyect-item {
+  margin: 16px 8px;
+  border: solid 1px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyect-link {
+  position: relative;
+}
+
+.proyect-caption {
+  width: 100%;
+  line-height: 80px;
+  background-color: #fff;
+  border-top: solid 1px rgba(0,0,0,0.4);;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.proyect-caption.ludoteca {
+  color: rgb(195, 18, 53);
+}
+
+.proyect-caption.iguana {
+  color: rgb(30, 26, 19)
+}
+
+.proyect-caption.cuppon {
+  color: rgb(40, 167, 69)
+}
+
+.proyect-caption.personal {
+  color: rgb(115, 77, 112)
+}
+
+.ludoteca .proyect-click,
+.iguana .proyect-click,
+.cuppon .proyect-click,
+.personal .proyect-click {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(195, 18, 53,0.9);
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ludoteca:hover .proyect-click,
+.iguana:hover .proyect-click,
+.cuppon:hover .proyect-click,
+.personal:hover .proyect-click {
+  opacity: 1;
+}
+
+.ludoteca .proyect-click {
+  background: rgba(195, 18, 53,0.9);
+}
+
+.iguana .proyect-click {
+  background: rgba(30, 26, 19, 0.9);
+}
+
+.cuppon .proyect-click {
+  background: rgba(40, 167, 69, 0.9);
+}
+
+.personal .proyect-click {
+  background: rgba(115, 77, 112, 0.9);
+}
+
+/* ------------ Curriculum ------------ */
+
+.curriculum {
+  height: 100%;
+  padding-top: 80px;
+}
+
+/* ------------ Responsive design ------------ */
 @media only screen and (max-width: 1175px) {
   .introduction img {
     margin-top: 100px;
     width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .proyects {
+    height: auto;
   }
 }
 
@@ -72,6 +185,11 @@ html, body {
     font-size: 18px;
     font-family: 'Roboto';
     margin-bottom: 40px;
+  }
+
+  .proyects {
+    margin-top: 40px;
+    height: auto;
   }
 }
 
