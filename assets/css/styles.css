@@ -310,6 +310,27 @@ html, body {
   margin-top: 20px;
 }
 
+/* ------------ Footer ------------ */
+
+footer {
+  background-color: #2E3445;
+  width: 100%;
+  padding: 0px 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  line-height: 80px;
+}
+
+footer .socials {
+  display: flex;
+  gap: 15px;
+}
+
+footer img {
+  width: 35px;
+}
 
 /* ------------ Responsive design ------------ */
 @media only screen and (max-width: 1175px) {
@@ -326,6 +347,10 @@ html, body {
 }
 
 @media only screen and (max-width: 570px) {
+  .introduction {
+    height: auto;
+  }
+
   .introduction img {
     margin-top: 200px;
     width: 40vw;
@@ -343,7 +368,7 @@ html, body {
   }
 
   .proyects {
-    margin-top: 40px;
+    padding-top: 70px;
     height: auto;
   }
 
