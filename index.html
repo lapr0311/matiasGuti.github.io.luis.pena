@@ -16,6 +16,8 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700,500,900" rel="stylesheet"
         type="text/css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon/mg.ico" type="image/ico">
     <!-- Normalize css -->
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <!-- Main css styles -->
@@ -111,47 +113,71 @@
     </section>
 
 
-    <section class="curriculum" id="cv">
+    <section class="curriculum" id="cv">        
         <div class="main-text">
             <h2>Curriculum Matías</h2>
             <p><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, ipsum?</i></p>
         </div>
         <ul class="timeline">
             <li class="experience">
-                <div class="exp-img"><img src="#" alt="Coopeuch"></div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, odio?</p>
+                <div class="exp-img img-fluid"><img src="./assets/img/experience-1.jpg" alt="Work 1"></div>
+                <div class="exp-text">
+                    <h4>2020-Presente</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, odio?</p>
+                </div>
             </li>
             <li class="experience">
-                <div class="exp-img"><img src="#" alt="Wellsfargo"></div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, odio?</p>
+                <div class="exp-img img-fluid"><img src="./assets/img/experience-2.jpg" alt="Work 2"></div>
+                <div class="exp-text">
+                    <h4>2018-2020</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, odio?</p>
+                </div>
             </li>
             <li class="experience">
-                <div class="exp-img"><img src="#" alt="Evalueserve"></div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, odio?</p>
+                <div class="exp-img img-fluid"><img src="./assets/img/experience-3.jpg" alt="Work 3"></div>
+                <div class="exp-text">
+                    <h4>2017-2018</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, odio?</p>
+                </div>
             </li>
         </ul>
         <div class="skills-container">
             <h3>Habilidades Técnicas</h3>
             <ul class="skills">
                 <li class="skill">
-                    <img src="#" alt="HTML">
-                    <p class="junior">Junior</p>
+                    <img src="./assets/img/html-logo.png" alt="HTML">
+                    <!-- <p class="junior">Junior</p> -->
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Junior</div>
+                    </div>                     
                 </li>
                 <li class="skill">
-                    <img src="#" alt="CSS">
-                    <p class="junior">Junior</p>
+                    <img src="./assets/img/css-logo.png" alt="CSS">
+                    <!-- <p class="junior">Junior</p> -->
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Junior</div>
+                    </div>       
                 </li>
                 <li class="skill">
-                    <img src="#" alt="Python">
-                    <p class="advance">Avanzado</p>
+                    <img src="./assets/img/python-logo.png" alt="Python">
+                    <!-- <p class="advance">Avanzado</p> -->
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Avanzado</div>
+                    </div>       
                 </li>
                 <li class="skill">
-                    <img src="#" alt="SQL">
-                    <p class="expert">Experto</p>
+                    <img src="./assets/img/sql-logo.png" alt="SQL">
+                    <!-- <p class="expert">Experto</p> -->
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Experto</div>
+                    </div>      
                 </li>
                 <li class="skill">
-                    <img src="#" alt="R">
-                    <p class="expert">Experto</p>
+                    <img src="./assets/img/r-logo.png" alt="R">
+                    <!-- <p class="expert">Experto</p> -->
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Experto</div>
+                    </div>      
                 </li>
             </ul>
         </div>
@@ -163,8 +189,10 @@
             <input class="tipo m-2 px-4 py-2" type="text" value="Nombre">
             <input class="tipo m-2 px-4 py-2" type="text" value="Correo Electrónico">
             <input class="tipo m-2 px-4 py-2" type="text" value="Teléfono">
-            <textarea name="Mensaje" id="message" placeholder="Tu mensaje aquí..."></textarea>
-            <input class="boton mt-3 mb-4 px-5 py-2" type="submit" value="Enviar">
+            <div class="form-group form-group-textarea mb-md-0">
+                <textarea class="form-control" id="message" placeholder="Mensaje"></textarea>
+            </div>
+            <input class="boton" type="submit" value="Enviar">
         </form>
     </section>
 

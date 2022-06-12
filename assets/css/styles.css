@@ -153,8 +153,163 @@ html, body {
 
 .curriculum {
   height: 100%;
+  width: 100%;
   padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:  "title      title"
+                        "experience skills";
 }
+
+.curriculum .main-text {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.curriculum ul {
+  list-style-type: none;
+}
+
+.curriculum .main-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.curriculum .main-text p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.curriculum .timeline {
+  grid-area: experience;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.curriculum .experience {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.curriculum .timeline .experience img {
+  width: 13vw;
+  border-radius: 50px;
+  border: solid 2px #4d2717;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.3s 0.3s;
+}
+
+.curriculum .timeline .experience img:hover {
+  transform: scale(1.25, 1.25);
+}
+
+.curriculum .timeline .experience .exp-text h4{
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #8e472b;
+}
+
+.skills-container h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.curriculum .skills-container {
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.curriculum .skills-container img {
+  width: 2vw;
+}
+
+.curriculum .skills-container .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.curriculum .skills-container .skills .skill .progress {
+  width: 85%;
+  border: solid 1px rgba(0, 0, 0, 0.4);
+}
+
+.curriculum .skills-container .skills .skill {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ------------ Contact ------------ */
+
+.contact-me {
+  height: 90%;
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url('../img/contact2-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact-me form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-me h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.contact-me .tipo {
+  color: #707070;
+  width: 95%;
+  border: solid 2px #eee ;
+  border-radius: 4px;
+}
+
+.contact-me .form-group{
+  width: 95%;
+  text-align: center;
+  margin: 8px;
+}
+
+.contact-me .boton {
+  width: 15%;
+  padding: 4px 0;
+  background-color: #caa009;
+  border: solid 1px #caa009;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+}
+
 
 /* ------------ Responsive design ------------ */
 @media only screen and (max-width: 1175px) {
@@ -191,13 +346,28 @@ html, body {
     margin-top: 40px;
     height: auto;
   }
+
+  .curriculum {
+    height: auto;
+    grid-template-areas:  "title        title"
+                          "experience   experience"
+                          "skills       skills";
+  }
+
+  .curriculum .experience {
+    flex-direction: column;
+  }    
+
+  .curriculum .skills-container img {
+    width: 5vw;
+  }
+
+  .curriculum .timeline .experience img {
+    width: 40vw;
+  }
+
+  .contact-me .boton {
+    width: 30%;
+    font-size: 25px;
+  }
 }
-
-
-/* #site-header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 3rem;
-  } */
